@@ -1,0 +1,27 @@
+{
+  "name": "poke-server",
+  "version": "1.0.0",
+  "description": "Backend For the PokeSearch App. ",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XooTB/PokeSearch.git"
+  },
+  "author": "Samiul Alim",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/XooTB/PokeSearch/issues"
+  },
+  "homepage": "https://github.com/XooTB/PokeSearch#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  },
+  "dependencies": {
+    "express": "^4.18.1",
+    "pokedex-promise-v2": "^4.0.0"
+  }
+}
