@@ -9,14 +9,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/XooTB/PokeSearch.git"
+    "url": "https://github.com/XooTB/pokedex-api"
   },
   "author": "Samiul Alim",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/XooTB/PokeSearch/issues"
+    "url": "https://github.com/XooTB/pokedex-api/issues"
   },
-  "homepage": "https://github.com/XooTB/PokeSearch#readme",
   "devDependencies": {
     "nodemon": "^2.0.16"
   },

@@ -1,15 +1,7 @@
-import Pokedex from 'pokedex-promise-v2';
-
-const options = {
-    protocol: 'https',
-    versionPath: '/api/v2/',
-    cacheLimit: 100 * 1000, // 100s
-    timeout: 5 * 1000 // 5s
-}
-const P = new Pokedex(options);
+import pokeSpecies from './pokeSpecies.js'
 
 async function Search(name) {
-    const data = await P.getPokemonSpeciesByName(name);
+    const data = await pokeSpecies(name);
     return data;
 }
 

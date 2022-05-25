@@ -9,8 +9,8 @@ app.get('/', (req, res) => {
     res.send('**POKE-SEARCH Server Running**')
 })
 
-app.get('/test', async (req, res) => {
-    const data = await Search('pikachu')
+app.get('/pokemon/:name', async (req, res) => {
+    const data = await Search(req.params.name)
     res.send(data)
 })
 
