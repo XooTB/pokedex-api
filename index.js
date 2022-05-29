@@ -2,7 +2,7 @@ import express from "express";
 import Search from "./pokedex/pokedex.js";
 
 const app = express();
-const port = process.env.PORT | 4000;
+const port = process.env.PORT || 4000;
 
 
 app.get('/', (req, res) => {
