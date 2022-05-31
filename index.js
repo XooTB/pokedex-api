@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/pokemon/:name', async (req, res) => {
-    const data = await Search(req.params.name)
+    const data = await Search(req.params.name.toLowerCase())
     res.send(data)
 })
 
