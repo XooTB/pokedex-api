@@ -1,10 +1,12 @@
 import express from "express";
-import pokemonRoutes from "./api/routes/pokemon.js"
+import pokemonRoutes from "./api/routes/pokemon.js";
+import cors from 'cors';
 
 const app = express();
 
-
+app.use(cors);
 app.use('/pokemon', pokemonRoutes);
+
 
 app.use((req, res, next) => {
     let err = new Error('Not Found');
