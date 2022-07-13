@@ -1,6 +1,7 @@
 import express from "express";
 import pokemonRoutes from "./api/routes/pokemon.js";
 import abilityRoutes from "./api/routes/ability.js";
+import moveRoutes from "./api/routes/move.js";
 import cors from 'cors';
 
 const app = express();
@@ -8,6 +9,7 @@ const app = express();
 app.use(cors());
 app.use('/pokemon', pokemonRoutes);
 app.use('/ability', abilityRoutes);
+app.use('/move', moveRoutes);
 
 app.use((req, res, next) => {
     let err = new Error('Not Found');
